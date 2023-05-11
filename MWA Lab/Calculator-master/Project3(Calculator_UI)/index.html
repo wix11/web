@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>CALCULATOR</title>
+</head>
+<body> 
+    <table>
+        <tr>
+            <td colspan="3"><input id = "calc" style=font-size:30px;></td>
+            <td><button style=font-size:30px; onclick="Show(3.14)">Π</button></td>
+        </tr>
+        
+        
+    <div class="btns">
+        <tr>
+        <td><button style="color:red" onclick="fun()">C</button></td>
+        <td><button style=font-size:25px; onclick="cancel()">⬅️</button></td>
+        <td><button onclick="Show('%')">%</button></td>
+        <td><button style=font-size:25px; onclick="Show('/')">÷</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show(7)">7</button></td>
+        <td><button onclick="Show(8)">8</button></td>
+        <td><button onclick="Show(9)">9</button></td>
+        <td><button onclick="Show('*')">X</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show(4)">4</button></td>
+        <td><button onclick="Show(5)">5</button></td>
+        <td><button onclick="Show(6)">6</button></td>
+        <td><button style=font-size:30px; onclick="Show('-')">-</button></td>
+        
+    </tr>
+    <tr>
+        <td><button id="btn" onclick="Show(1)">1</button></td>
+        <td><button onclick="Show(2)">2</button></td>
+        <td><button onclick="Show(3)">3</button></td>
+        <td><button onclick="Show('+')">+</button></td>
+        
+    </tr>
+    <tr>
+        <td><button onclick="Show('00')">00</button></td>
+        <td><button onclick="Show(0)">0</button></td>
+        <td><button onclick="Show('.')">.</button></td>
+        <td><button onclick="exe()">=</button></td>
+        
+    </tr>
+    
+    </div>
+</table>
+<script src="script.js"></script>
+
+<h1>Fibonacci Series</h1>
+	<p>Enter a number to generate Fibonacci Series:</p>
+	<h1> <input type="number" id="input" onchange="generateSeries()"></h1>
+	<h1><div id="output"></div></h1>
+	<script>
+		function generateSeries() {
+			let n = document.getElementById("input").value;
+			let fib = [0, 1];
+			for (let i = 2; i <= n; i++) {
+				fib[i] = fib[i - 1] + fib[i - 2];
+			}
+			document.getElementById("output").innerHTML = fib.slice(0, n + 1).join(", ");
+		}
+	</script>
+
+
+<h1>Palindrome Checker</h1>
+<p>Enter a word or phrase to check if it's a palindrome:</p>
+<form onsubmit="checkPalindrome(event)">
+    <input type="text" id="input1" required>
+    <button type="submit">Check</button>
+</form>
+<div id="result"></div>
+<script>
+    function checkPalindrome(event) {
+        event.preventDefault();
+        let str = document.getElementById("input1").value.toLowerCase().replace(/\W/g, '');
+        let reversedStr = str.split('').reverse().join('');
+        if (str === reversedStr) {
+            document.getElementById("result").innerHTML = `Yes, the word/phrase "${str}" is a palindrome!`;
+        } else {
+            document.getElementById("result").innerHTML = `No, the word/phrase "${str}" is not a palindrome.`;
+        }
+    }
+</script>
+
+
+
+
+</body>
+</html>

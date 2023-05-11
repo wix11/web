@@ -1,0 +1,9 @@
+<!DOCTYPE bookstore [
+  <!ELEMENT bookstore (book+)>
+  <!ELEMENT book (title, author, year, price)>
+  <!ATTLIST book category CDATA #IMPLIED>
+  <!ATTLIST title lang CDATA #IMPLIED>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT year (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>

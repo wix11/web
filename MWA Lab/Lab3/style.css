@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+}
+
+.container {
+    /* border: 2px solid green; */
+}
+
+.header {
+    display: flex;
+    height: auto;
+    border: 2px solid red;
+}
+
+.header--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+#logo {
+    /* border: 2px solid blue; */
+    display: inline;
+    height: 50%;
+}
+#title {
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid brown; */
+    /* display: inline; */
+    /* position: absolute; */
+    /* margin-left: 25%; */
+}
+.navbar{
+    border: 2px solid orange;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.navbar a{
+    text-decoration: none;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
+.leftblock{
+    border: 4px solid aqua;
+    position: absolute;
+    display: inline;
+    margin-top: 3%;
+}
+
+.leftblock ul{
+    list-style: none;
+    /* display: inline; */
+}
+
+.leftblock ul li{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 3em;
+}   
+
+#catelogue_pg{
+    margin-top: 2%;
+    text-align: center;
+    font-size: xx-large;
+}
+.catelogue_details{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.catelogue_details > li{
+    background-color: lightgrey;
+    height: 21em;
+    width: 13em;
+    border-radius: 1.5em;
+    margin-left: 1.5em;
+    margin-right: 1em;
+}
+
+.catelogue_details > li > img{
+    height: 81%;
+    width: 100%;
+}
+
+.catelogue_details > li > p{
+    margin: 0;
+}
+
+
+#cart_pg{
+    margin-top: 2%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.cart_items{
+    margin-left: 15em;
+    list-style: none;
+    height: 1000px;
+    width: 65em;
+    /* background-color: lightgrey; */
+}
+.cart_items li {
+    display: flex;
+    margin-top: 2em;
+    border: 2px solid red;
+    /* width: 10em; */
+}
+.cart_items--details{
+    padding-left: 10em;
+}
+.cart_items--img{
+
+}
+.cart_items img{
+    /* width: ; */
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.back{
+    background: #ffe084;
+    display: flex;
+    justify-content: center ;
+    padding: 20px;
+    border-radius: 10%;
+    border: 7px solid #ffcc54;
+}
+.back input{
+    margin  : 10px;
+}
+.out{
+    display: flex;
+    justify-content: center;
+}
+.butn{
+    background: #ffcc54;
+    padding: 5px;
+    border-radius: 10%;
+}
+.butn:hover{
+    background-color: #d79600;
+}
