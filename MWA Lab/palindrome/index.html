@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <label for="name">Enter string: </label>
+    <input type="text" id="name">
+    <br>
+    <input type="button" value="check" onclick="check(event)">
+    <h2>
+        <div id="output"></div>
+    </h2>
+    <script>
+        function check(event){
+            event.preventDefault();
+            var str = document.getElementById("name").value;
+            var str2 =  str.split("").reverse().join("");
+            var ret = document.getElementById("output");
+            if(str===str2)
+            ret.innerHTML = "Yes is Palindrome"
+            else
+            ret.innerHTML = "No is Not Palindrome"
+        }
+    </script>
+</body>
+</html>

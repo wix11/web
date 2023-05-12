@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <label for="num1">num1: </label>
+    <input type="text" id="num1" style="width: 10px;">
+    <br>
+    <br>
+    <label for="num2">nume2: </label>
+    <input type="text" id="num2">
+    <br>
+    <br>
+    <label for="oper">OPERATION: </label>
+    <input type="text" id="oper">
+    <br>
+    <input type="button" value="calculate" onclick="calc(event)">
+    <h3>
+        <div id="output"></div>
+    </h3>
+    <script>
+        function calc(event){
+            event.preventDefault();
+            var n1 = document.getElementById("num1").value;
+            var n2 = document.getElementById("num2").value;
+            var op = document.getElementById("oper").value;
+            document.getElementById("output").innerHTML = eval(n1+op+n2);
+        }
+    </script>
+</body>
+</html>
