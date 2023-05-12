@@ -1,0 +1,58 @@
+h1{
+    color: blue;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 10opx;
+}
+
+.lala{
+    margin-left: 13em;
+}
+
+.nav_items{
+    list-style: none;
+    /* line-height: 100px; */
+    font-size: large;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_items li a{
+    text-decoration: none;
+    color: black;
+}
+
+.left_block{
+    display: flex;
+    position: absolute;
+}
+
+.left_items{
+    list-style: none;
+    line-height: 100px;
+    font-size: large;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.left_items li a{
+    margin-right: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+
+.greet{
+    /* display: flex; */
+    /* align-items: center; */
+    margin-left: 45%;
+    justify-content: center;
+}
